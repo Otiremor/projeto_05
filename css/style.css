@@ -49,8 +49,8 @@ nav.mobile ul {
   display: none;
   width: 100%;
   left: 0;
-  top: 92px;
-  border-bottom: 4px solid #EB2D2D;
+  top: 95px;
+  border-bottom: 4px solid #eb2d2d;
   z-index: 999;
   position: absolute;
   text-align: center;
@@ -85,8 +85,9 @@ header nav.desktop a {
 }
 
 section.banner {
+  overflow: hidden;
   width: 100%;
-  height: 600px;
+  height: 650px;
   background-color: #000000;
   background-image: url("../images/bg.jpg");
   background-repeat: no-repeat;
@@ -95,56 +96,64 @@ section.banner {
 }
 
 .text-banner {
-  padding: 100px;
+  padding: 70px;
 }
 
 .text-banner-single {
   width: 314px;
   font-style: italic;
-  margin-top: 20px;
-  padding: 12px 30px;
-  height: 50px;
+  margin-top: 30px;
+  height: 70px;
+  line-height: 70px;
+  padding-left: 50px;
   text-transform: uppercase;
   color: #ffffff;
   font-size: 23px;
   background-image: url("../images/box-text.png");
   background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .text-banner .text-banner-single:nth-of-type(2) {
   width: 200px;
-  height: 50px;
+  height: 70px;
   position: relative;
   left: -10px;
 }
 
 .text-banner .text-banner-single:nth-of-type(3) {
   width: 170px;
-  height: 50px;
+  height: 70px;
+  line-height: 70px;
   position: relative;
   left: -20px;
 }
 
 .text-banner .text-banner-single:nth-of-type(4) {
   width: 320px;
-  height: 50px;
   font-size: 21px;
   color: #000000;
   position: relative;
   left: -30px;
+  line-height: 70px;
   background-image: url("../images/box-white-text.png");
 }
 
 .text-banner .text-banner-single a {
   text-decoration: none;
+  color: inherit;
 }
 
 section.veiculos-destaque {
   padding: 90px 2%;
 }
 
+section.veiculos-destaque .container {
+  padding: 40px 0;
+}
+
 .line-titulo {
-  max-width: 800px;
+  max-width: 1400px;
   margin: 0 auto;
   position: relative;
   text-align: center;
@@ -152,13 +161,13 @@ section.veiculos-destaque {
 
 .ln1 {
   position: absolute;
-  height: 1px;
+  height: 2px;
   width: 100%;
   top: 20px;
   background: #000000;
 }
 
-section.veiculos-destaque h2 {
+section.veiculos-destaque .line-titulo h2 {
   position: relative;
   background: #ffffff;
   display: inline-block;
@@ -169,20 +178,46 @@ section.veiculos-destaque h2 {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 1400px) {
-  section.banner {
-    background-size: 90% auto;
-    background-position: 200% 100%;
-  }
+.vitrine-destaque {
+  float: left;
+  width: 33.3%;
 }
 
-@media screen and (max-width: 1024px) {
-  section.banner {
-    background-size: cover;
-    background-position: center;
-    height: 70vw;
-    min-height: 500px;
-  }
+.vitrine-destaque .carro-img {
+  width: 100%;
+  padding-top: 100%;
+  background-size: 100% 100%;
+  border: 8px solid #ffffff;
+}
+
+.vitrine-destaque h2 {
+  padding-left: 8px;
+  color: #000000;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.vitrine-destaque p {
+  padding-top: 8px;
+  padding-left: 8px;
+  color: #353535;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.vitrine-destaque a {
+  margin-left: 8px;
+  color: #ffffff;
+  background-color: #eb2d2d;
+  font-size: 16px;
+  font-style: italic;
+  width: 150px;
+  margin-top: 10px;
+  text-align: center;
+  display: block;
+  line-height: 40px;
+  text-decoration: none;
+  border-bottom: 5px solid #b21e1e;
 }
 
 @media screen and (max-width: 768px) {
@@ -206,6 +241,38 @@ section.veiculos-destaque h2 {
   }
 
   .text-banner-single {
+    width: 240px;
     font-size: 18px;
+  }
+
+  .text-banner .text-banner-single:nth-of-type(4) {
+    width: 270px;
+  }
+
+  section.veiculos-destaque .line-titulo h2 {
+    font-size: 23px;
+  }
+
+  section.veiculos-destaque .container {
+    max-width: 1000px;
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .vitrine-destaque {
+    display: inline-block;
+    float: none;
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .vitrine-destaque a {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .vitrine-destaque {
+    width: 100%;
   }
 }
