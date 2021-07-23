@@ -390,7 +390,7 @@ footer p {
 }
 
 section.venda {
-  padding: 90px 0;
+  padding: 90px 2%;
   min-height: 90%;
 }
 
@@ -513,7 +513,6 @@ section.venda {
 }
 
 .vitrine-venda {
-  overflow: hidden;
   float: left;
   width: 70%;
 }
@@ -540,6 +539,14 @@ section.venda {
 }
 
 @media screen and (max-width: 900px) {
+  nav.desktop {
+    display: none;
+  }
+
+  nav.mobile {
+    display: block;
+  }
+
   .nome-depoimento {
     float: left;
     width: 100%;
