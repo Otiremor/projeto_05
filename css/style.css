@@ -574,7 +574,7 @@ section.venda-single .container {
   left: 8px;
   top: 50%;
   cursor: pointer;
-  transform: translate(-50%);
+  transform: translateY(-50%);
   background-image: url("../images/arrow-left.png");
   background-size: 100% 100%;
   width: 22px;
@@ -586,7 +586,7 @@ section.venda-single .container {
   right: 8px;
   top: 50%;
   cursor: pointer;
-  transform: translate(-50%);
+  transform: translateY(-50%);
   background-image: url("../images/arrow-right.png");
   background-size: 100% 100%;
   width: 22px;
